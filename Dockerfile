@@ -6,4 +6,4 @@ COPY . .
 
 RUN npm i --only=production
 
-CMD [ "npm", "start" ]
+ENTRYPOINT ["bash","/usr/src/app/startup.sh"]
